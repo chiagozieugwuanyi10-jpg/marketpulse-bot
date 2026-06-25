@@ -57,7 +57,7 @@ DEEPSEEK_KEY      = os.environ.get("DEEPSEEK_KEY",      "")
 MISTRAL_KEY       = os.environ.get("MISTRAL_KEY",       "")
 QWEN_KEY          = os.environ.get("QWEN_KEY",          "")
 CRYPTOCOMPARE_KEY = os.environ.get("CRYPTOCOMPARE_KEY", "")
-ADMIN_CODE        = os.environ.get("ADMIN_CODE",        "")
+ADMIN_CODE = "DR KUMALO"
 
 # ── ADMIN CONFIG ──────────────────────────────────────────────────────────────
 ADMIN_IDS = {8212124930}

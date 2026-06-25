@@ -4847,14 +4847,9 @@ def build_admin_stats_text():
     return "\n".join(lines)
 
 def handle_admin_command(chat_id, text):
-    """All admin commands require chat_id in ADMIN_IDS + correct ADMIN_CODE."""
+    """Admin commands - only checks if user is admin."""
     parts = text.strip().split()
     cmd = parts[0].lower()
-
-    if ADMIN_CODE:
-        if len(parts) < 2 or parts[-1] != ADMIN_CODE:
-            return
-        parts = parts[:-1]
 
     if chat_id not in ADMIN_IDS:
         return
@@ -5559,7 +5554,7 @@ def run():
                                   "/unblock", "/appeals", "/appeal_approve", "/appeal_reject")
                     if any(text.startswith(c) for c in admin_cmds):
                         if chat_id in ADMIN_IDS:
-                            handle_admin_command(chat_id, text)
+                        
                         continue
 
                     if text.startswith("/help"):

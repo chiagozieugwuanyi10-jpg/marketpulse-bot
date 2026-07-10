@@ -92,7 +92,7 @@ ADMIN_IDS = {int(x.strip()) for x in _admin_ids_env.split(",") if x.strip().isdi
 
 ADMIN_CODE = os.environ.get("ADMIN_CODE", "")
 CHANNEL_ID = os.environ.get("CHANNEL_ID", "-1004495003791")
-PRO_CHANNEL_ID = os.environ.get("PRO_CHANNEL_ID", "-100XXXXXXXXX")
+PRO_CHANNEL_ID = os.environ.get("PRO_CHANNEL_ID", "-1004383094764")
 CHANNEL_ENABLED = True
 MIRROR_MODE = False  # When True: Pro channel content also posts to free channel
 WAT_OFFSET = 1
